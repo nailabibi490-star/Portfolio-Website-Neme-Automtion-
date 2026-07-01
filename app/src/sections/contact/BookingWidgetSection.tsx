@@ -20,11 +20,11 @@ export default function BookingWidgetSection() {
 
     script.onload = () => {
       if (
-        window.calendar &&
-        window.calendar.schedulingButton &&
+        (window as any).calendar &&
+        (window as any).calendar.schedulingButton &&
         buttonRef.current
       ) {
-        window.calendar.schedulingButton.load({
+        (window as any).calendar.schedulingButton.load({
           url:
             'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3RDYo9P0nMNd-CDL7_fI8XJxzSbPIfcu6YXiqE2Tn-CbEFP_kWO0GMOhjmQKCa85IY48btF0MW?gv=true',
           color: '#14B8A6', // teal
