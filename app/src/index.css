@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 156 68% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 20% 12%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 156 68% 36%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 156 68% 36%;
+    --radius: 0.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #07071A;
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(29, 158, 117, 0.3);
+    color: #FFFFFF;
+  }
+
+  :focus-visible {
+    outline: 2px solid #1D9E75;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
