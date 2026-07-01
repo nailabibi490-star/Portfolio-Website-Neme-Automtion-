@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const team = [
   {
     name: 'Naila Bibi',
-    role: 'Client Strategy',
+    role: 'CEO',
     bio: 'Focuses on understanding your business and designing the right automation setup for your needs.',
     photo: '/naila-bibi.jpg',
   },
