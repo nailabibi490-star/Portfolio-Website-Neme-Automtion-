@@ -11,6 +11,9 @@ export default defineConfig({
     port: 3000,
     allowedHosts: ['monotonous-bankable-keli.ngrok-free.dev']
   },
+  build: {
+    outDir: 'build', // Changes the output folder from 'dist' to 'build'
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
